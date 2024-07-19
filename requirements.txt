@@ -2,3 +2,4 @@ llama-index
 llama-index-embeddings-huggingface
 langchain-fireworks
 tavily-python
+llama-index-llms-fireworks
