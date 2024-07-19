@@ -7,7 +7,6 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from langchain_fireworks import ChatFireworks
 
 from tavily import TavilyClient
-from langchain_community.retrievers import TavilySearchAPIRetriever
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import Settings
