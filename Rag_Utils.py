@@ -26,8 +26,6 @@ Settings.embed_model = HuggingFaceEmbedding(
 
 llm = ChatFireworks(model="accounts/fireworks/models/mixtral-8x7b-instruct")
 
-Settings.llm = llm
-
 def llama_Rag(question):
     
     response = tavily.search(query = question)
@@ -43,6 +41,8 @@ def llama_Rag(question):
     storage_context.docstore.add_documents(nodes)
 
     vector_index = VectorStoreIndex(nodes, storage_context=storage_context)
+
+    Settings.llm = llm
     
     query_engine = vector_index.as_query_engine(
         streaming = True,
