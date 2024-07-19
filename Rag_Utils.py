@@ -24,7 +24,7 @@ Settings.embed_model = HuggingFaceEmbedding(
         model_name="BAAI/bge-small-en-v1.5"
 )
 
-llm = ChatFireworks(model="accounts/fireworks/models/mixtral-8x7b-instruct")
+llm = ChatFireworks(model="accounts/fireworks/models/llama-v3-8b-instruct")
 
 def llama_Rag(question):
     
