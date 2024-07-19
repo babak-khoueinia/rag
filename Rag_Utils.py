@@ -43,6 +43,9 @@ def llama_Rag(question):
     vector_index = VectorStoreIndex(nodes, storage_context=storage_context)
 
     Settings.llm = llm
+
+    print('nodes: ', nodes)
+    print('context: ', storage_context)
     
     query_engine = vector_index.as_query_engine(
         streaming = True,
